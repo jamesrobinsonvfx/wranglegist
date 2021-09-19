@@ -19,7 +19,7 @@ If you prefer not to use Houdini packages for whatever reason, you can manually
 copy the files to any Houdini location (`$HSITE`, `$HOUDINI_USER_PREFS`) or
 anyhwere on your `$HOUDINI_PATH`.
 
-- `ParmGearMenus.xml` should live at the root. ie if you're moving these files into your user prefs
+- `ParmMenu.xml` should live at the root. ie if you're moving these files into your user prefs
   folder, it should live right inside the `houdini18.5` folder.
 - Copy the library `wranglegist` to `python2.7libs` or `python3.7libs`
   (depending on your Houdini installation version)
