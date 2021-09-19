@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menuDocument>
+  <menu>
+  <separatorItem/>
+    <scriptItem id="wranglegist">
+    <context>
+      <expression>any(x in ("snippet", "code", "python") for x in [parm.name() for parm in kwargs["parms"]])</expression>
+    </context>
+      <label>Create Gist from Snippet</label>
+      <scriptCode><![CDATA[import wranglegist;wranglegist.create(kwargs["parms"][0])]]></scriptCode>
+    </scriptItem>
+  </menu>
+</menuDocument>

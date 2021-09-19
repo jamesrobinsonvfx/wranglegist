@@ -1,0 +1,16 @@
+{
+    "enable": true,
+    "env": [
+        {
+            "WRANGLEGIST_INSTALL_DIR": "$HOUDINI_PACKAGE_PATH/wranglegist"
+        },
+        {
+            "WRANGLEGIST_BUILD_DIR": [
+                {
+                    "houdini_version >= '18.5' and houdini_version < '19.0'": "$WRANGLEGIST_INSTALL_DIR/houdini18.5"
+                }
+            ]
+        }
+    ],
+    "path": "$WRANGLEGIST_BUILD_DIR"
+}
