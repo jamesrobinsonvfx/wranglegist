@@ -48,7 +48,7 @@ Linux / Mac
 ```
 
 ```
-%UserProfile%\github_personal_access_token
+%UserProfile%\gist_personal_access_token
 ```
 
 1. Create an empty file in your home folder and call it `gist_personal_access_token`
@@ -58,10 +58,12 @@ Linux / Mac
    the following:
     ```
     jamesrobinsonvfx
-    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
+    ghp_eeGRRdh7ESHGdfke3GJKEoC46rDmg
     ```
 And that's it!
 
+> Don't share your access token with anyone! This one is some gibberish, but
+> close to what one would actually look like.
 
 ## Features
 This menu item does one thing: push the snippet to your Gists feed! There are a couple extra features to note:
@@ -79,13 +81,14 @@ one from houdini (ie. `pointwrangle`).
 .py
 .ocl
 ```
-Please note that `.vfl` extensions aren't recognized by GitHub/Gist, so the format highlighting won't be there. That's
-why for Vex wrangles I typically use `.h` to get some nice color variation. It's close.
 
-- This menu item is available on the following node types:
-  SOPs DOPs TOPs
+> Please note that `.vfl` extensions aren't recognized by GitHub/Gist, so the
+> format highlighting won't be there. That's why for Vex wrangles I typically
+> use `.h` to get some nice color variation. It's close.
 
-- Any `Null` in any context that has a parameter called `snippet` will also be considered.
+### Context
+Any parameter named `snippet`, `code` or `python` will have this option in its
+**Right Click** menu.
 
 ## Usage
 [![Usage Demo]()]()
