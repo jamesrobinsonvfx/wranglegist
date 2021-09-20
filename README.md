@@ -9,10 +9,10 @@ words with *-ing* at the end? That's all stuff you have to *do*! What if you
 could just have one button that does all that stuff for you? You could
 potentially save valuable *seconds* of your life...
 
-That's where **[Wrangle to Gist]({{ site.socials.github }}/{{ page.repo }})**
+That's where **[Wrangle to Gist](#overview)**
 comes in. It's a simple script that gets added to any parameter in Houdini that
 deals with snippets (chunks of code), and allows you to quickly post that
-snippet straight to your [Gist Feed]({{ site.socials.gist }}). View the rest of
+snippet straight to your [Gist Feed](https://gist.github.com/jamesrobinsonvfx). View the rest of
 the features [below](#features).
 
 ## Installation
@@ -114,6 +114,4 @@ Any parameter named `snippet`, `code` or `python` will have this option in its
 
 ## Usage
 
-<video width="720" height="405" autoplay loop>
-	<source src="https://www.jamesrobinsonvfx.com/assets/projects/wrangle-to-gist/images/demo.mp4" type="video/mp4">
-</video>
+https://www.jamesrobinsonvfx.com/assets/projects/wrangle-to-gist/images/demo.mp4
