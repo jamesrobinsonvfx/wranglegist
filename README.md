@@ -1,5 +1,8 @@
 # Wrangle to Gist
 
+> *README is under construction, and there's no official release yet, so if
+> you've found this early, it's not all the way tested!*
+
 ## Installation
 
 ### Houdini Packages
@@ -8,15 +11,15 @@
 2. Navigate to your houdini user preferences folder and into the `packages`
    directory (if the `packages` folder does not exist, create it).
    ```
-   $HOUDINI_USER_PREFS/packages
+   $HOUDINI_USER_PREF_DIR/packages
    ```
 3. Copy the zip archive here and extact its contents.
-4. Move (or copy) the `wranglegist.json` file to the parent directory `$HOUDINI_USER_PREFS/packages`
+4. Move (or copy) the `wranglegist.json` file to the parent directory `$HOUDINI_USER_PREF_DIR/packages`
 5. Launch Houdini
 
 ### Manual Installation
 If you prefer not to use Houdini packages for whatever reason, you can manually
-copy the files to any Houdini location (`$HSITE`, `$HOUDINI_USER_PREFS`) or
+copy the files to any Houdini location (`$HSITE`, `$HOUDINI_USER_PREF_DIR`) or
 anyhwere on your `$HOUDINI_PATH`.
 
 - `ParmMenu.xml` should live at the root. ie if you're moving these files into your user prefs
@@ -68,8 +71,8 @@ And that's it!
 ## Features
 This menu item does one thing: push the snippet to your Gists feed! There are a couple extra features to note:
 
-- Suggested filename will come from whatever the node is called (`opname(".")`). Unless the node name is the default
-one from houdini (ie. `pointwrangle`).
+- Suggested filename will come from whatever the node is called (`opname(".")`),
+  unless the node name is the default one from Houdini (ie. `pointwrangle`).
 
 - Description field is left blank, unless your snippet's first line is a comment
   (`//` or `/*` for C-style languages, `#` or `"""` or `'''` for Python)
