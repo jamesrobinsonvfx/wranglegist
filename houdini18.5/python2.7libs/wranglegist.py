@@ -110,7 +110,7 @@ class GistRequest:
         """
         return {
             "description": self.gist.desc,
-            "public": self.gist.visibility,
+            "public": self.gist.public,
             "files": {self.gist.filename: {"content": self.gist.snippet}}
         }
 
@@ -184,6 +184,7 @@ class Gist:
         self.filename = filename
         self.desc = desc
         self.snippet = snippet
+        self.public = True
 
     @property
     def filename(self):
@@ -265,6 +266,9 @@ class Gist:
     def visibility(self):
         """Visibility level of the Gist.
 
+        Take a string since the default hou ui only has string inputs.
+        We'll set the `public` bool for the request here.
+
         :param viz: Visibility level. Options are "public" and "private"
         :type viz: str
         :raises ValueError: Must be a valid visibility string
@@ -280,7 +284,8 @@ class Gist:
                     " ".join(["\"{0}\"".format(x) for x in VISIBILITY_TAGS])
                 )
             )
-        self._visibility = bool(VISIBILITY_TAGS.index(viz))
+        self._visibility = viz
+        self.public = bool(VISIBILITY_TAGS.index(viz))
 
 
 class GistErrorHandler:
