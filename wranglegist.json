@@ -7,7 +7,7 @@
         {
             "WRANGLEGIST_BUILD_DIR": [
                 {
-                    "houdini_version >= '18.5' and houdini_version < '19.0'": "$WRANGLEGIST_INSTALL_DIR/houdini18.5"
+                    "houdini_version >= '18.5'": "$WRANGLEGIST_INSTALL_DIR/houdini18.5"
                 }
             ]
         }
